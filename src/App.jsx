@@ -78,37 +78,38 @@ function App() {
           </div>
         </div>
 
-        {/* Features Row - Services Overview */}
-        <div className="features-row reveal reveal-up">
-          <div className="features-container">
-            <div className="container features-inner">
-              <div className="feature-card">
-                <div className="feature-icon float">🎫</div>
-                <div className="feature-text">
-                  <h3>Ticketing Services</h3>
-                  <p>Global airline ticketing with the best rates and seamless booking experience for all destinations.</p>
-                </div>
+      </section>
+
+      {/* Features Row - Services Overview */}
+      <div className="features-row reveal reveal-up">
+        <div className="features-container">
+          <div className="container features-inner">
+            <div className="feature-card">
+              <div className="feature-icon float">🎫</div>
+              <div className="feature-text">
+                <h3>Ticketing Services</h3>
+                <p>Global airline ticketing with the best rates and seamless booking experience for all destinations.</p>
               </div>
-              <div className="feature-divider"></div>
-              <div className="feature-card">
-                <div className="feature-icon float" style={{ animationDelay: '0.5s' }}>🕌</div>
-                <div className="feature-text">
-                  <h3>Hajj & Umrah</h3>
-                  <p>Licensed pilgrimage agency offering customized and group packages for your sacred travels.</p>
-                </div>
+            </div>
+            <div className="feature-divider"></div>
+            <div className="feature-card">
+              <div className="feature-icon float" style={{ animationDelay: '0.5s' }}>🕌</div>
+              <div className="feature-text">
+                <h3>Hajj & Umrah</h3>
+                <p>Licensed pilgrimage agency offering customized and group packages for your sacred travels.</p>
               </div>
-              <div className="feature-divider"></div>
-              <div className="feature-card">
-                <div className="feature-icon float" style={{ animationDelay: '1s' }}>🌍</div>
-                <div className="feature-text">
-                  <h3>Holiday Packages</h3>
-                  <p>Explore the world with our exclusive inbound and outbound tour packages tailored for you.</p>
-                </div>
+            </div>
+            <div className="feature-divider"></div>
+            <div className="feature-card">
+              <div className="feature-icon float" style={{ animationDelay: '1s' }}>🌍</div>
+              <div className="feature-text">
+                <h3>Holiday Packages</h3>
+                <p>Explore the world with our exclusive inbound and outbound tour packages tailored for you.</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Airline Partners Section */}
       <section className="partners-section reveal reveal-up">
