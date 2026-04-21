@@ -167,7 +167,7 @@
 }
 
 .hero-content {
-  padding-bottom: 150px;
+  padding-bottom: 80px;
   position: relative;
   z-index: 1;
 }
@@ -203,22 +203,20 @@
 
 /* Features Row */
 .features-row {
-  position: absolute;
-  bottom: -60px;
-  left: 0;
+  position: relative;
   width: 100%;
   z-index: 10;
+  margin-top: -1px; /* Avoid tiny gaps */
 }
 
 .features-container {
-  background: var(--glass-dark);
+  background: var(--secondary); /* Solid background for clarity below hero */
   backdrop-filter: blur(15px);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
-  padding: 40px 0;
+  padding: 60px 0;
   width: 100%;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
 }
 
 .features-inner {
@@ -280,7 +278,7 @@
 
 /* About Section */
 .about-section {
-  padding: 200px 0 120px;
+  padding: 100px 0 120px;
   background: var(--bg-light);
 }
 
@@ -700,10 +698,7 @@
   .features-inner {
     flex-direction: column;
     gap: 30px;
-  }
-  
-  .features-row {
-    bottom: -150px;
+    padding: 0 20px;
   }
   
   .feature-divider {
