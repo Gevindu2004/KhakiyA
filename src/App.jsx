@@ -5,6 +5,10 @@ import './App.css';
 import heroBg from './assets/hero-bg.png';
 import aboutImg from './assets/about-img.png';
 import guidanceImg from './assets/guidance-img.png';
+import emiratesLogo from './assets/logos/emirates.webp';
+import srilankanLogo from './assets/logos/srilankan.webp';
+import qatarLogo from './assets/logos/qatar.webp';
+import etihadLogo from './assets/logos/etihad.png';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -115,11 +119,11 @@ function App() {
       <section className="partners-section reveal reveal-up">
         <div className="container">
           <div className="partners-grid">
-             <div className="partner-logo">EMIRATES</div>
-             <div className="partner-logo">QATAR AIRWAYS</div>
-             <div className="partner-logo">SRILANKAN</div>
+             <div className="partner-logo"><img src={emiratesLogo} alt="Emirates" /></div>
+             <div className="partner-logo"><img src={qatarLogo} alt="Qatar Airways" /></div>
+             <div className="partner-logo"><img src={srilankanLogo} alt="SriLankan" /></div>
              <div className="partner-logo">SAUDI ARABIAN</div>
-             <div className="partner-logo">ETIHAD</div>
+             <div className="partner-logo"><img src={etihadLogo} alt="Etihad" /></div>
           </div>
         </div>
       </section>
