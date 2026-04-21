@@ -6,9 +6,13 @@ import heroBg from './assets/hero-bg.png';
 import aboutImg from './assets/about-img.png';
 import guidanceImg from './assets/guidance-img.png';
 import emiratesLogo from './assets/logos/emirates.webp';
-import srilankanLogo from './assets/logos/srilankan.webp';
+import srilankanLogo from './assets/logos/srilankan.png';
 import qatarLogo from './assets/logos/qatar.webp';
 import etihadLogo from './assets/logos/etihad.png';
+import britishLogo from './assets/logos/british_airways.png';
+import airIndiaLogo from './assets/logos/air_india.png';
+import singaporeLogo from './assets/logos/singapore_airlines.png';
+import hero from './assets/hero-img.png';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -71,7 +75,7 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="hero" id="home" style={{ backgroundImage: `linear-gradient(rgba(15, 33, 30, 0.7), rgba(15, 33, 30, 0.7)), url(${heroBg})` }}>
+      <section className="hero" id="home" style={{ backgroundImage: ` url(${hero})` }}>
         <div className="container hero-content">
           <span className="subtitle animate-fade">BEST HAJJ & UMRAH SERVICES IN SRI LANKA</span>
           <h1 className="animate-fade-up">Your Adventure <br/> Awaits with us !</h1>
@@ -118,12 +122,26 @@ function App() {
       {/* Airline Partners Section */}
       <section className="partners-section reveal reveal-up">
         <div className="container">
-          <div className="partners-grid">
-             <div className="partner-logo"><img src={emiratesLogo} alt="Emirates" /></div>
-             <div className="partner-logo"><img src={qatarLogo} alt="Qatar Airways" /></div>
-             <div className="partner-logo"><img src={srilankanLogo} alt="SriLankan" /></div>
-             <div className="partner-logo">SAUDI ARABIAN</div>
-             <div className="partner-logo"><img src={etihadLogo} alt="Etihad" /></div>
+          <div className="partners-slider">
+            <div className="partners-track">
+              {/* First Set */}
+              <div className="partner-logo"><img src={emiratesLogo} alt="Emirates" /></div>
+              <div className="partner-logo"><img src={qatarLogo} alt="Qatar Airways" /></div>
+              <div className="partner-logo srilankan-logo"><img src={srilankanLogo} alt="SriLankan" /></div>
+              <div className="partner-logo british-logo"><img src={britishLogo} alt="British Airways" /></div>
+              <div className="partner-logo airindia-logo"><img src={airIndiaLogo} alt="Air India" /></div>
+              <div className="partner-logo singapore-logo"><img src={singaporeLogo} alt="Singapore Airlines" /></div>
+              <div className="partner-logo"><img src={etihadLogo} alt="Etihad" /></div>
+              
+              {/* Duplicate Set for Seamless Loop */}
+              <div className="partner-logo"><img src={emiratesLogo} alt="Emirates" /></div>
+              <div className="partner-logo"><img src={qatarLogo} alt="Qatar Airways" /></div>
+              <div className="partner-logo srilankan-logo"><img src={srilankanLogo} alt="SriLankan" /></div>
+              <div className="partner-logo british-logo"><img src={britishLogo} alt="British Airways" /></div>
+              <div className="partner-logo airindia-logo"><img src={airIndiaLogo} alt="Air India" /></div>
+              <div className="partner-logo singapore-logo"><img src={singaporeLogo} alt="Singapore Airlines" /></div>
+              <div className="partner-logo"><img src={etihadLogo} alt="Etihad" /></div>
+            </div>
           </div>
         </div>
       </section>
