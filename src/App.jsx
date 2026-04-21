@@ -258,7 +258,7 @@ We never forget to whom we are working for. Our commitment to excellence and int
           <div className="footer-col brand">
             <div className="logo white">
               <span className="logo-icon float">🌙</span>
-              <span className="logo-text">Kakhiy<span>A</span></span>
+              <span className="logo-text">KakhiyA</span>
             </div>
             <p>Building Trust Since 2005. We handle all aspects of travel with excellence and integrity.</p>
             <div className="footer-contact-info">
